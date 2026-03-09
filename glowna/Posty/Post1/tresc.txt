@@ -37,6 +37,9 @@ $icon_big.png?300$
 </div>
 %%
 
+<hr>
+$zdc.png?650$
+
 ! Podaż maksymalna: 
   * 2,000,000 ZDC.
 

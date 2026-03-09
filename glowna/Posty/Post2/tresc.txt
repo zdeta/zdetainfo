@@ -38,6 +38,8 @@ $icon_big.png?300$
 </div>
 %%
 
+<hr>
+$zdc.png?650$
 
 ! Maximum Supply:
   * 2,000,000 ZDC.
