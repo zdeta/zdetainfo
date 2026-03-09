@@ -1,0 +1,66 @@
+/* Pozycjonowanie SVG na środku kontenera .entryimg */
+
+/* Stylizacja linii kółka */
+.progress-ring__circle {
+    fill: none;
+    stroke-width: 10; /* Grubość neonu */
+    stroke-linecap: round;
+}
+
+.progress-ring__bar {
+    stroke: #39FF14; /* Kod koloru neonowego */
+    /* Mocniejszy blask */
+    filter: drop-shadow(0 0 5px #39FF14); 
+    transition: stroke-dashoffset 1.5s ease-out;
+}
+
+
+/* Tło koła (pusta ścieżka) - teraz delikatny szary/przezroczysty */
+.progress-ring__background {
+    stroke: rgba(255, 255, 255, 0.1); /* Bardzo jasny, ledwo widoczny biały */
+}
+
+/* Pasek postępu - CZYSTA BIEL */
+
+
+/* Napis procentowy na środku */
+.percent-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    color: #ffffff;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    /* Delikatny cień tekstu, żeby był czytelny na każdym tle */
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+/* Wymuszenie idealnego środka */
+.progress-ring {
+    position: absolute;
+    top: 0;      /* Zamiast 50%, używamy 0 i margin: auto */
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto; /* To automatycznie centruje element wewnątrz rodzica */
+    width: 140px;
+    height: 140px;
+    z-index: 2;
+    transform: rotate(-90deg); /* Obrót zostawiamy, ale bez translate */
+}
+
+.text_centrum {
+    display: flex;
+    justify-content: center; /* Wyśrodkowanie w poziomie */
+    align-items: center;     /* Wyśrodkowanie w pionie */
+    height: 140px;
+	color: #ffffff;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    /* Delikatny cień tekstu, żeby był czytelny na każdym tle */
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}

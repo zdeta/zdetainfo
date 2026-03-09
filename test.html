@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>ZDETA - Mining Progress</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ethers/6.7.0/ethers.umd.min.js"></script>
+    <style>
+        body { background: #000; color: #0f0; font-family: 'Courier New', monospace; text-align: center; padding: 50px; }
+        
+        /* Styl Koła Progressu */
+        .progress-container { position: relative; width: 200px; height: 200px; margin: 0 auto; }
+        
+        svg { transform: rotate(-90deg); } /* Start od góry */
+        
+        circle {
+            fill: none;
+            stroke-width: 10;
+            stroke-linecap: round;
+        }
+
+        .bg-circle { stroke: #003300; } /* Tło koła */
+        
+        .progress-bar {
+            stroke: #0f0;
+            stroke-dasharray: 565; /* Obwód koła (2 * PI * r) */
+            stroke-dashoffset: 565; /* Początkowo puste */
+            transition: stroke-dashoffset 1.5s ease-out;
+            filter: drop-shadow(0 0 8px #0f0);
+        }
+
+        .percentage {
+            position: absolute;
+            top: 50%; left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 1.5em; font-weight: bold;
+        }
+
+        .label { margin-top: 20px; font-size: 0.9em; opacity: 0.8; }
+    </style>
+</head>
+<body>
+
+    <h2>🛸 STATUS WYDOBYCIA ARTEFAKTÓW</h2>
+
+    <div class="progress-container">
+        <svg width="200" height="200">
+            <circle class="bg-circle" cx="100" cy="100" r="90"></circle>
+            <circle id="circleProgress" class="progress-bar" cx="100" cy="100" r="90"></circle>
+        </svg>
+        <div id="percentText" class="percentage">0%</div>
+    </div>
+
+    <div class="label">Podaż w Galaktyce: <span id="supplyText">Ładowanie...</span></div>
+
+    <script>
+        // --- KONFIGURACJA ---
+        const CONTRACT_ADDR = "0x4BaBb8f8517bBDf9EaA5b29cbfdBEb3e74C100dC"; 
+        const MAX_SUPPLY = 2000000; // Wpisz tu maksymalną ilość tokenów (np. 21 mln)
+        const RPC = "https://bsc-dataseed1.binance.org/";
+
+        const abi = ["function totalSupply() view returns (uint256)", "function decimals() view returns (uint8)"];
+
+        async function updateProgress() {
+            try {
+                const provider = new ethers.JsonRpcProvider(RPC);
+                const contract = new ethers.Contract(CONTRACT_ADDR, abi, provider);
+
+                const rawSupply = await contract.totalSupply();
+                const decimals = await contract.decimals();
+                const supply = parseFloat(ethers.formatUnits(rawSupply, decimals));
+
+                // Oblicz procent
+                let percent = (supply / MAX_SUPPLY) * 100;
+                if (percent > 100) percent = 100;
+
+                // Animacja koła
+                const circle = document.getElementById('circleProgress');
+                const radius = 90;
+                const circumference = 2 * Math.PI * radius;
+                const offset = circumference - (percent / 100 * circumference);
+                
+                circle.style.strokeDashoffset = offset;
+                document.getElementById('percentText').innerText = percent.toFixed(2) + "%";
+                document.getElementById('supplyText').innerText = supply.toLocaleString() + " / " + MAX_SUPPLY.toLocaleString();
+
+            } catch (err) {
+                console.error(err);
+                document.getElementById('percentText').innerText = "ERR";
+            }
+        }
+
+        updateProgress();
+        setInterval(updateProgress, 30000); // Odświeżaj co 30 sek.
+    </script>
+</body>
+</html>

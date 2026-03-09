@@ -1,0 +1,94 @@
+ZDC: Complex Systems Dynamics Research
+
+1. Tokenomics and Computational Mechanics
+
+ZDC is based on a scarcity model generated through labor (Proof-of-Nonce). The token's value in this system is not a derivative of speculation, but a direct conversion of time and energy dedicated to computational verification.
+
+$icon_big.png?300$
+
+%%
+<div style="display: flex; flex-direction: column; align-items: center; justify-content: center; margin: 30px 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+    
+    <span style="font-size: 11px; font-weight: 800; color: #556677; letter-spacing: 2px; margin-bottom: 8px; text-transform: uppercase;">
+        Contract Identifier (Base Network)
+    </span>
+
+    <div style="display: flex; align-items: center; background: rgba(0, 210, 255, 0.07); border: 1px solid #00d2ff; padding: 15px 25px; border-radius: 50px; box-shadow: 0 4px 15px rgba(0, 210, 255, 0.15);">
+        
+        <code id="contractAddr" style="font-family: 'Courier New', Courier, monospace; font-size: 1.1rem; font-weight: bold; color: #00d2ff; margin-right: 15px; letter-spacing: 0.5px;">
+            0xDDD9610E8E96e9341001DE7F0e13bB8E189b1ABc
+        </code>
+
+        <button onclick="navigator.clipboard.writeText('0xDDD9610E8E96e9341001DE7F0e13bB8E189b1ABc'); alert('Copied to clipboard!')" 
+                style="background: #00d2ff; border: none; color: white; padding: 8px 15px; border-radius: 20px; font-size: 12px; font-weight: bold; cursor: pointer; transition: opacity 0.2s;"
+                onmouseover="this.style.opacity='0.8'" 
+                onmouseout="this.style.opacity='1'">
+            COPY
+        </button>
+
+    </div>
+
+    <a href="https://basescan.org/address/0xDDD9610E8E96e9341001DE7F0e13bB8E189b1ABc" target="_blank" 
+       style="margin-top: 12px; color: #00d2ff; text-decoration: none; font-size: 12px; border-bottom: 1px solid transparent; transition: border 0.3s;"
+       onmouseover="this.style.borderBottom='1px solid #00d2ff'" 
+       onmouseout="this.style.borderBottom='1px solid transparent'">
+        Verify on BaseScan →
+    </a>
+
+</div>
+%%
+
+
+! Maximum Supply:
+  * 2,000,000 ZDC.
+! Deflationary Mechanism:
+  * Every token transfer transaction is subject to an automatic burn of 0.05%. This mechanism serves to study the circulation velocity of assets within a closed circuit.
+! Mining:
+  * New ZDC units are created exclusively through active algorithmic verification.
+! Value Correlation:
+  * The natural consequence of mining is the transformation of the user's electrical energy and computational time into a digital asset. We perceive this contribution as a fundamental equivalent of value – the costly "sacrifice" of node resources is the mathematical guarantee of the authenticity of each ZDC unit.
+
+2. Project Status - Current Phase Completed
+
+$milestones.png$
+
+As a result of the operational tests conducted, the mathematical stability of contract 0x000...000 has been confirmed. All parameters, including the Proof-of-Nonce mechanism and the deflationary function (0.05% burn per transaction), operate according to the assumed model.
+* BaseScan: Source code verification completed successfully.
+* GitHub Repository: Full computational documentation and the mining module source code are open to independent researchers.
+* Network Stability: The system demonstrates a correct response to all conducted unit tests.
+
+"The mathematical foundations of the ZDC system have been verified. The system has undergone a calibration process and is ready to receive external stimuli. We are preparing for Phase 2: Information Stress."
+
+3. Research Objective
+
+The ZDC (Zdeta Coin) project is a digital research instrument designed to observe processes occurring in peer-to-peer networks. Our goal is to gather data on how users, algorithms, and blockchain protocols interact under conditions of limited resource availability. We study how a raw stimulus (contract availability) initiates interactions, creating connection structures between wallets without external manipulation of parameters (constant difficulty 215).
+
+4. Anomaly Detection and Graph Architecture
+
+The ZDC system monitors transactional relationships in real-time. Our algorithms track the "flow of influence" within the connection graph, focusing on detecting deviations from the organic model:
+
+* System Entropy: We monitor rapid changes in the rate of interaction (phase transitions).
+* Pattern Detection (Anomaly Detection): Algorithms flag transaction clusters exhibiting characteristics of automation (bot-driven) or artificial grouping.
+* Propagation Visualization: We analyze how "knowledge" of the contract translates into the growth of active nodes.
+
+5. Appeal to Observers
+
+Every interaction with the ZDC contract is automatically recorded as a data point in our experiment. The user is not an investor – they are a node in a complex system whose behaviors are subject to statistical analysis.
+
+"Complex systems reveal their true nature only under the influence of information stress. We are observing."
+
+6. Research Potential: Extrapolation to Macro Systems
+
+Observations gathered within the ZDC ecosystem are not an end in themselves. They constitute a "model dataset" that may serve in the future to analyze anomalies in other, more complex markets:
+
+Pre-Bubble Detection: By analyzing the connection graph structure in ZDC, we are working on algorithms identifying "unnatural node densities" – patterns that often precede rapid liquidity changes in larger financial markets.
+
+Information Propagation Efficiency Analysis: ZDC allows for the study of how quickly a "narrative" (information about the project) turns into "activity" (transactions). These same propagation parameters can be used to model the price behavior of high-volatility assets, where crowd psychology dominates over economic fundamentals.
+
+System Resilience Modeling (Stress Testing): We use ZDC to test how systems react to Sybil attacks (creating multiple fake identities in a network). Understanding how to sift such anomalies from organic behavior is crucial for building the more secure transaction systems of the future.
+
+Capital Flow Mapping in Chaotic Systems:Most financial models assume the "rationality" of market participants. Our observations of complex systems in ZDC allow for the creation of Agent-Based Modeling that better reflects the real, often irrational nature of capital markets.
+
+9. null
+
+null
