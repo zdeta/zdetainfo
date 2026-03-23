@@ -1,6 +1,6 @@
 // Konfiguracja Twojego projektu
 const TOKEN_CONFIG = {
-    address: "0xDDD9610E8E96e9341001DE7F0e13bB8E189b1ABc", // Twój zweryfikowany kontrakt na Base
+    address: "0xCF317ca8A59d10f1d7e07911BBA0fBaF730B60fB", // Twój zweryfikowany kontrakt na Base
     maxSupply: 2000000,
     rpc: "https://mainnet.base.org", // ZMIENIONE: Oficjalny punkt dostępowy sieci Base
     decimals: 9 // UWAGA: Standard ERC-20 to zazwyczaj 18. Sprawdź, czy w kodzie Solidity nie masz 9.
