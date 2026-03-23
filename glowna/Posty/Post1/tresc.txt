@@ -15,7 +15,7 @@ $icon_big.png?300$
     <div style="display: flex; align-items: center; background: rgba(0, 210, 255, 0.07); border: 1px solid #00d2ff; padding: 15px 25px; border-radius: 50px; box-shadow: 0 4px 15px rgba(0, 210, 255, 0.15);">
         
         <code id="contractAddr" style="font-family: 'Courier New', Courier, monospace; font-size: 1.1rem; font-weight: bold; color: #00d2ff; margin-right: 15px; letter-spacing: 0.5px;">
-            0xDDD9610E8E96e9341001DE7F0e13bB8E189b1ABc
+            0xCF317ca8A59d10f1d7e07911BBA0fBaF730B60fB
         </code>
 
         <button onclick="navigator.clipboard.writeText('0xCF317ca8A59d10f1d7e07911BBA0fBaF730B60fB'); alert('Copied to clipboard!')" 
