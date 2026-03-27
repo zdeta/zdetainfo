@@ -1,0 +1,8 @@
+{
+	"posty": [
+		{
+			"kategoria": "News",
+			"data" : ["Post1" , "Post2"]
+		}
+	]
+}
