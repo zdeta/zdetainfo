@@ -2,7 +2,7 @@
 	"posty": [
 		{
 			"kategoria": "News",
-			"data" : ["Post1" , "Post2"]
+			"data" : ["Post1" , "Post_pl2"]
 		}
 	]
 }

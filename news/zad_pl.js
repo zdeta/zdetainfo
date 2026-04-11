@@ -1,7 +1,7 @@
 var path = '/zdetainfo/news';
 
 function start() {
-	localStorage.setItem("status", 'Post1');
+	//localStorage.setItem("status", 'Post1');
 	setPath(path);
 	getArtykul();
 	setTimeout(function() {
